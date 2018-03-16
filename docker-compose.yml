@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  learn-py:
+    build: .
+    restart: always
+    tty: true
+    ports:
+      - 67:80
+    volumes:
+      - .:/learn-py
